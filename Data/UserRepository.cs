@@ -43,7 +43,7 @@ namespace API.Data
 
         public async void Update(AppUser user)
         {
-            _context.Entry(user).State = EntityState.Modified;
+          _context.Entry(user).State = EntityState.Modified;
         }
 
         public  async Task<IEnumerable<MembersDto>> GetMembersAsync()
